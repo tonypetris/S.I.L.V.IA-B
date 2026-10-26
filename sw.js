@@ -1,5 +1,5 @@
 // S.I.L.V.I.A. + B service worker – offline cache
-const CACHE='silvia-b-1.0.0-rc.1-202610261612';
+const CACHE='silvia-b-1.0.0-rc.1-202610261637';
 const LOCAL=['./','index.html','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','icons/icon-512-maskable.png','icons/apple-touch-icon.png'];
 const REMOTE=['https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js','https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js','https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap'];
 self.addEventListener('install',e=>{e.waitUntil((async()=>{const c=await caches.open(CACHE);for(const u of LOCAL){try{await c.add(u)}catch(err){}}
